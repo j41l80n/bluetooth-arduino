@@ -8,14 +8,12 @@ void setup()
 {
   Serial.begin(9600);
   Bluetooth.begin(9600);
-
   Bluetooth.println("Send 1 to turn on the LED. Send 0 to turn Off");
 }
 
 void loop()
 {
   Bluetooth.println("teste");
-
   if (Bluetooth.available()) { //wait for data received
     data = Bluetooth.read();
     if (data == '1') {
