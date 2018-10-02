@@ -1,6 +1,7 @@
 #include <Bluetooth_HC05.h>
 #include <SoftwareSerial.h>
-SoftwareSerial Bluetooth(10, 9); // RX, TX
+
+SoftwareSerial Bluetooth(10, 11); // RX, TX
 
 int data = 0;
 
