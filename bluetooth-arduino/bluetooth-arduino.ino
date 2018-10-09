@@ -18,17 +18,17 @@ void loop()
   if (Bluetooth.available()) { //wait for data received
     data = Bluetooth.read();
     if (data == '1') {
-      Serial.println("LED On!");
+//      Serial.println("LED On!");
     }
     else if (data == '0') {
       // digitalWrite(LED, 0);
-      Serial.println("LED Off!");
+//      Serial.println("LED Off!");
       // Bluetooth.println("LED  On D13 Off ! ");
     }
   }
   else
   {
-    Serial.println("not availSable");
+//    Serial.println("not availSable");
   }
   delay(100);
 }
